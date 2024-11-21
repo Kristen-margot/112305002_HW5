@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>112305002 Portfolio</title>
+	<style>
+		body {
+			background-color: #eeede1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 20px;
+			margin: 0;
+		}
+		.main-container {
+			height: 1150px;
+			display: flex;
+			width: 900px;
+			background: white;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
+			overflow: hidden;
+		}
+		.left-panel {
+			width: 330px;
+			display: flex;
+			flex-direction: column;
+			background-color: #f0f8ff;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		.photo-panel {
+			background-image: url('myphoto.jpg');
+			height: 575px;
+			background-size: cover;
+			background-position: center;
+			border-radius: 8px;
+		}
+		.text-content {
+			margin-top: 20px;
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.text-content p {
+			margin: 0;
+		}
+		.right-panel {
+			width: 570px;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		.section {
+			margin-bottom: 20px;
+		}
+		.section h2 {
+			font-size: 20px;
+			margin-bottom: 10px;
+			border-bottom: 2px solid #ccc;
+			padding-bottom: 5px;
+		}
+		.timeline {
+			display: flex;
+			flex-direction: column;
+		}
+		.timeline-item {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 10px;
+		}
+		.homework-list a {
+			text-decoration: none;
+			color: #007BFF;
+		}
+		.homework-list a:hover {
+			text-decoration: underline;
+		}
+		.music-grid {
+			display: flex;
+			justify-content: space-between;
+		}
+		.music-grid img {
+			width: 100px;
+			height: 100px;
+			border-radius: 8px;
+			transition: transform 0.3s;
+		}
+		.music-grid img:hover {
+			transform: scale(1.1);
+		}
+		.note {
+			font-size: 14px;
+			color: #555;
+			margin-top: 10px;
+		}
+		/* Responsive Design */
+		@media (max-width: 768px) {
+			.main-container {
+				flex-direction: column;
+				width: 100%;
+			}
+			.left-panel, .right-panel {
+				width: 100%;
+			}
+			.music-grid {
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="main-container">
+    <div class="left-panel">
+
+        <div class="photo-panel"></div>
+
+        <div class="text-content">
+            <div>
+                <h1>Joanna</h1>
+                <h2>About Me</h2>
+                <p>
+                    I am Joanna from the Department of Business Adminstration
+                    at National Chengchi University. I am very interested in studying 
+                    programming and computer science fundamentals. I have experience 
+                    in writing Java, HTML, CSS, JavaScript, and Python.
+                </p>
+            </div>
+
+            <div class="contact">
+                <h2>Contact</h2>
+                <a href="mailto:112305002@g.nccu.edu.tw">112305002@g.nccu.edu.tw</a>
+            </div>
+
+            <div class="nccu-logo">
+				<img src="nccu.jpg" alt="NCCU Logo" width="100">
+            </div>
+        </div>
+    </div>
+
+		<div class="right-panel">
+			<div class="section">
+				<h2>Education</h2>
+				<div class="timeline">
+					<div class="timeline-item">
+						<span class="year">2023-now</span>
+						<span>NCCU, Department of Business Administration</span>
+					</div>
+					<div class="timeline-item">
+						<span class="year">2021-2023</span>
+						<span>Yanping High School</span>
+					</div>
+					<div class="timeline-item">
+						<span class="year">before 2021</span>
+						<span>learning English</span>
+					</div>					
+				</div>
+			</div>
+			<div class="section">
+				<h2>Homework List</h2>
+				<div class="homework-list">
+					<a href="https://github.com/Kristen-margot/112305002HW.git">HW1</a><br>
+					<a href="https://github.com/Kristen-margot/HW2.git">HW2</a><br>
+					<a href="https://github.com/Kristen-margot/HW3.git">HW3</a><br>
+					<a href="https://github.com/Kristen-margot/112305002_HW4.git">HW4</a><br>
+					<a href="https://github.com/Kristen-margot/112305002_LAB1.git">LAB_1108</a>
+				</div>
+			</div>
+			<div class="section">
+				<h2>Favorite Music</h2>
+				<div class="music-grid">
+					<a href="https://youtu.be/Z4qVfCi_lUI">
+						<img src="youtube.jpg" alt="Song 1"><div></div>
+					</a>
+					<a href="https://youtu.be/cF1Na4AIecM">
+						<img src="youtube.jpg" alt="Song 2">
+					</a>
+					<a href="https://youtu.be/kPa7bsKwL-c">
+						<img src="youtube.jpg" alt="Song 3">
+					</a>
+					<a href="https://youtu.be/jRRCWFLAO6k?si=LskYcJcN91vhJr3q">
+						<img src="youtube.jpg" alt="Song 4">
+					</a>
+				</div>
+				<div class="note">These are my favorite songs chosen for their meaningful lyrics and unique melodies.</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
